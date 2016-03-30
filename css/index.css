@@ -153,6 +153,7 @@ section{
 }
 .navbar-brand span{
     color:#fff;
+    font-family: "ChopinScript";
 }
 .navbar-brand img{
     height: 180%;
