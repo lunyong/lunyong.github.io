@@ -1,0 +1,101 @@
+.dialog-mask{
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: black;
+    opacity: 0.5;
+    width: 100%;
+    height: 100%;
+
+}
+.dialog-container{
+    position: absolute;
+    width: 300px;
+    height: 200px;
+    left: 0;
+    top: 0;
+}
+.dialog-inner{
+    position: relative;
+    left: -50%;
+    top: -50%;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+}
+.dialog-head{
+    width: 100%;
+    height: 36px;
+    position: relative;
+    border-bottom: 1px solid #0075ba;
+    background-color: #ffffff;
+}
+.dialog-head p{
+    padding: 0 0 0 15px;
+    margin: 0;
+    line-height: 36px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-right: 40px;
+}
+.dialog-head .btn-close{
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    text-align: center;
+    line-height: 25px;
+    border: 1px solid lightgray;
+    border-radius: 50%;
+    color: lightgray;
+    cursor: pointer;
+    font-weight: bolder;
+}
+.dialog-head .btn-close:hover{
+    background-color: #007AB9;
+    border-color: #007AB9;
+    color: #ffffff;
+}
+.dialog-content{
+    min-height: 123px;
+    background-color: #ffffff;
+}
+.dialog-content p{
+    margin: 0px;
+    padding: 15px;
+    word-break: break-all;
+}
+.dialog-foot{
+    height: 39px;
+    width: 100%;
+    border-top: 1px solid #0075ba;
+    text-align: right;
+    line-height: 36px;
+    background-color: #ffffff;
+
+}
+.dialog-foot button{
+    margin-right: 20px;
+    width: 60px;
+    height: 25px;
+    background-color: #0075ba;
+    color: #ffffff;
+    border-color: #0075ba;
+    line-height: normal;
+}
+
+.elastic{
+    -webkit-animation: elastic 0.3s ;
+    -o-animation: elastic 0.3s;
+    animation: elastic 0.3s linear;
+}
+
+@keyframes elastic {
+    0%{ top: 0px}
+    60%{ top: 40px}
+    80%{ top: 30px}
+    100%{ top: 40px}
+}

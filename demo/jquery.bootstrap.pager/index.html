@@ -1,0 +1,120 @@
+﻿<html>
+<head>
+	<title></title>
+	<link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+	<style type="text/css">
+		/*分页*/
+		/*.pager-container{
+			position: relative;
+			margin-top:20px;
+			text-align:center;
+		}
+		.pager-container .pager-info{
+			line-height: 35px;
+			padding: 0px 5px;
+			margin: 20px 0;
+			float: left;
+			color: #77C3B2;
+		}
+		.pager-container .pagination{
+			float: left;
+		}
+		.pager-container .pagination li a{
+			cursor: pointer;
+			color: #77C3B2;
+			height: 35px;
+		}
+		.pager-container .pagination > li > a:hover, .pager-container .pagination > li > a:focus{
+			color: #FFFFFF;
+			background-color: #77C3B2;
+		}
+		.pager-container .pagination li.active a{
+			background-color: #77C3B2;
+			border-color: #77C3B2;
+		}
+		.pager-container .pagination li.active a:hover{
+			background-color: #77C3B2;
+			border-color: #77C3B2;
+		}
+
+		.pager-container .pager-go{
+			float: left;
+			margin: 20px 0;
+			height: 35px;
+			padding: 5px;
+		}
+		.pager-container .pager-go input[type=text]{
+			width: 50px;
+			text-align: center;
+			border: 1px solid #77C3B2;
+		}
+		.pager-container .pager-go input[type=button]{
+			width: 30px;
+			border: 1px solid #77C3B2;
+			background-color: #FFFFFF;
+			color: #77C3B2;
+		}
+		.pager-container .pager-go input[type=text]:focus{
+			border: 1px solid #288F78;
+		}
+		.pager-container .pager-go input[type=button]:hover{
+			background-color: #77C3B2;
+			border-color: #77C3B2;
+			color: #FFFFFF;
+		}*/
+
+	</style>
+	<script type="text/javascript" src="jquery.min.js"></script>
+	<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="jquery.pager.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$.pager({
+				url: location.href,                        //请求数据的路径，必需
+				type: "get",                    //请求方式，可以不设置，默认为get，不必需
+				params: {},                     //ajax请求所需参数，默认为空对象，必需
+				dataType: "html",               //返回的数据类型，默认为json，不必需
+				renderTo: '#pager',
+				requestPageName: 'page',
+				requestSizeName: 'rows',
+				responsePageName: 'page',
+				responseTotalName: 'total',
+				responseRecordsName: 'records',
+				pageButtonNum: 10,              //显示数字按钮的个数，默认为10，不必需
+				pagerContainerEnabled: false,
+				pagerContainerClass: '',
+				pagerInfoEnabled: true,
+				pagerInfoClass: '',
+				pagerInfoHtml: '',
+				pagerGoEnabled: true,
+				pagerGoClass: '',
+				isTest: true,	//如果只是测试前端效果，那么可以加上isTest属性，正式使用时不需要
+				success: function (data) {      //数据请求成功后执行的操作，必需
+
+
+				}
+			});
+		})
+	</script>
+</head>
+<body>
+	<nav class="pager-container" id="pager">
+		<!--<div class="pager-info" id="pager-info">共25页，70条</div>
+		<ul class="pagination">
+			<li class="fix-btn enabled" id="first" pindex="1"><a><i class="glyphicon glyphicon-fast-backward"></i></a></li>
+			<li class="fix-btn enabled" id="prev" pindex="4"><a><i class="glyphicon glyphicon-backward"></i></a></li>
+			<li class="num-btn enabled" pindex="1"><a>1</a></li><li class="num-btn enabled" pindex="2"><a>2</a></li>
+			<li class="num-btn enabled" pindex="3"><a>3</a></li><li class="num-btn enabled" pindex="4"><a>4</a></li>
+			<li class="num-btn enabled active" pindex="5"><a>5</a></li><li class="num-btn enabled" pindex="6"><a>6</a></li>
+			<li class="num-btn enabled" pindex="7"><a>7</a></li><li class="num-btn enabled" pindex="8"><a>8</a></li>
+			<li class="num-btn enabled" pindex="9"><a>9</a></li><li class="num-btn enabled" pindex="10"><a>10</a></li>
+			<li class="fix-btn enabled" id="next" pindex="6"><a><i class="glyphicon glyphicon-forward"></i></a></li>
+			<li class="fix-btn enabled" id="last" pindex="25"><a><i class="glyphicon glyphicon-fast-forward"></i></a></li>
+		</ul>
+		<div class="pager-go" id="pager-go">
+			<input id="goto" type="text">
+			<input id="btnGo" type="button" value="Go">
+		</div>-->
+	</nav>
+</body>
+</html>

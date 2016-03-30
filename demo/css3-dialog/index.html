@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>对话框</title>
+    <style type="text/css">
+
+    </style>
+    <link rel="stylesheet" href="dialog.css" />
+    <script>
+        window.onload = function(){
+            document.getElementById('btn').onclick = function(){
+                alertMsg("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", function(){
+                    alert('点击alert的确定按钮后执行');
+                });
+            }
+
+            document.getElementById('btnC').onclick = function () {
+                confirmMsg("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", function(){
+                    alert('点击confirm的确定按钮后执行');
+                });
+            }
+
+
+        }
+    </script>
+</head>
+<body>
+<button id="btn">弹弹弹</button><button id="btnC">确定要弹？</button>
+<div style="width: 200px; height: 100px; position: absolute; top: 0; left: 0; visibility: hidden;"></div>
+<p>ppppppppppppppppppppppppppp</p><p>ppppppppppppppppppppppppppp</p><p>ppppppppppppppppppppppppppp</p><p>ppppppppppppppppppppppppppp</p><p>ppppppppppppppppppppppppppp</p><p>ppppppppppppppppppppppppppp</p><p>ppppppppppppppppppppppppppp</p><p>ppppppppppppppppppppppppppp</p><p>ppppppppppppppppppppppppppp</p><p>ppppppppppppppppppppppppppp</p><p>ppppppppppppppppppppppppppp</p><p>ppppppppppppppppppppppppppp</p><p>ppppppppppppppppppppppppppp</p><p>ppppppppppppppppppppppppppp</p><p>ppppppppppppppppppppppppppp</p><p>ppppppppppppppppppppppppppp</p><p>ppppppppppppppppppppppppppp</p><p>ppppppppppppppppppppppppppp</p><p>ppppppppppppppppppppppppppp</p><p>ppppppppppppppppppppppppppp</p><p>ppppppppppppppppppppppppppp</p><p>ppppppppppppppppppppppppppp</p><p>ppppppppppppppppppppppppppp</p><p>ppppppppppppppppppppppppppp</p><p>ppppppppppppppppppppppppppp</p><p>ppppppppppppppppppppppppppp</p><p>ppppppppppppppppppppppppppp</p><p>ppppppppppppppppppppppppppp</p><p>ppppppppppppppppppppppppppp</p><p>ppppppppppppppppppppppppppp</p><p>ppppppppppppppppppppppppppp</p><p>ppppppppppppppppppppppppppp</p><p>ppppppppppppppppppppppppppp</p><p>ppppppppppppppppppppppppppp</p><p>ppppppppppppppppppppppppppp</p><p>ppppppppppppppppppppppppppp</p><p>ppppppppppppppppppppppppppp</p><p>ppppppppppppppppppppppppppp</p><p>ppppppppppppppppppppppppppp</p><p>ppppppppppppppppppppppppppp</p><p>ppppppppppppppppppppppppppp</p><p>ppppppppppppppppppppppppppp</p><p>ppppppppppppppppppppppppppp</p><p>ppppppppppppppppppppppppppp</p><p>ppppppppppppppppppppppppppp</p><p>ppppppppppppppppppppppppppp</p><p>ppppppppppppppppppppppppppp</p><p>ppppppppppppppppppppppppppp</p><p>ppppppppppppppppppppppppppp</p><p>ppppppppppppppppppppppppppp</p><p>ppppppppppppppppppppppppppp</p><p>ppppppppppppppppppppppppppp</p><p>ppppppppppppppppppppppppppp</p><p>ppppppppppppppppppppppppppp</p>
+<!--<div class="dialog-mask"></div>
+<div class="dialog-container">
+    <div class="dialog-head">
+        <p>标题标题标题标题标题标题标题标题标题标题标题</p>
+        <span class="btn-close">×</span>
+    </div>
+    <div class="dialog-content">
+        <p>内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容</p>
+
+    </div>
+    <div class="dialog-foot">
+        <button class="btn-ok">确定</button>
+    </div>
+</div>-->
+<script type="text/javascript" src="dialog.js"></script>
+</body>
+</html>
