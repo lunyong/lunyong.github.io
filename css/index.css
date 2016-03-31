@@ -144,7 +144,10 @@ section{
 .navbar-brand{
     font-size:25px;
     color: #fff;
-    line-height: 25px;
+    padding-top: 0;
+    padding-bottom: 0;
+    height: 70px;
+    line-height: 66px;
     -webkit-transition: font-size .5s, height .5s;
     -moz-transition: font-size .5s, height .5s;
     -ms-transition: font-size .5s, height .5s;
@@ -156,7 +159,7 @@ section{
     font-family: "ChopinScript";
 }
 .navbar-brand img{
-    height: 180%;
+    height: 70%;
     width: auto;
     vertical-align: middle;
     max-width: 100%;
@@ -210,7 +213,8 @@ ul.navbar-nav a {
 
 @media (min-width: 768px) {
     .header.small .navbar-brand{
-        height: 45px;
+        height: 50px;
+        line-height: 46px;
         font-size: 20px;
     }
     .nav > li > a:focus {
@@ -1377,20 +1381,6 @@ figcaption .links a{
         float: left;
         margin: 0px 5px 0px 0px;
     }
-    /*count*/
-    .facts-wrap {
-        margin: 0px auto 65px;
-    }
-
-    .video-text {
-        margin-top: 30px;
-    }
-
-    /*pricing*/
-    .pricing{
-        margin: 0 auto;
-        width: 50%;
-    }
     .cyprass-carousel-controller {
         left: 41%;
     }
@@ -1402,34 +1392,18 @@ figcaption .links a{
         padding: 0px 20px 0px 20px;
     }
 
-
     /*backt top*/
     #back-top {
         right: 12px;
     }
-
-
-    /*-- Landing ---*/
-
-    .hero-text{
-        width: 95%;
-    }
-    .hero-title{
-        font-size: 36px;
-    }
-    .hero-buttons a.btn {
-        padding: 10px 20px;
-    }
-
-    .app-gallery figure.effect-oscar a{
-        margin-top: 105px;
-    }
-
-
 }
 
 /* Small Devices Potrait */
 @media (max-width : 767px){
+    .navbar-brand{
+        height: 50px;
+        line-height: 46px;
+    }
     ul.navbar-nav>li{
         border-top: 1px solid #025991;
         border-bottom: 1px solid lightcyan;
@@ -1514,51 +1488,11 @@ figcaption .links a{
         right: 30px;
     }
 
-    /*header*/
-    .navbar-brand img {
-        margin-top: -10px;
-    }
-
     .feature_title {
         font-size: 30px;
     }
     .feature_content .btn-main{
         margin-bottom: 40px;
-    }
-
-    #service{
-        padding-bottom: 0px;
-        padding-top: 40px;
-    }
-
-    /*count*/
-    .facts-wrap {
-        margin: 0px auto 65px;
-    }
-
-    .video-text {
-        margin-top: 30px;
-    }
-
-    /*pricing table*/
-    .single_table {
-        width: 287px;
-    }
-    .single_table ul li.price {
-        font-size: 40px;
-    }
-    .single_table .plan_wraper {
-        height: 64px;
-        left: 38%;
-    }
-    .single_table ul li {
-        font-size: 16px;
-    }
-    .grey_bg{
-        -webkit-transform: none;
-        -ms-transform: none;
-        -o-transform: none;
-        transform: none;
     }
 
     .testimonial-slide .testimonial-text {
@@ -1567,43 +1501,6 @@ figcaption .links a{
         text-align: justify;
         max-width: 431px;
         padding: 0px 20px 0px 20px;
-    }
-    /*client*/
-    .client_logo {
-        padding: 0px;
-        margin: 0 auto;
-        width: 50%;
-    }
-
-    #client {
-        padding: 0px 0px;
-    }
-
-    /*blog*/
-    #banner {
-        height: 400px;
-    }
-    .blog-header {
-        margin-top: 95px;
-    }
-    #portfolio-slider li img {
-        height: 250px !important;
-    }
-    .bx-wrapper .bx-controls-direction a {
-        top: 42%;
-    }
-    .bx-wrapper .bx-viewport {
-        height: 250px !important;
-    }
-    .bx-wrapper .bx-pager {
-        top: 60%;
-    }
-    .share1 {
-        height: 88px;
-        padding: 5px 20px 30px 20px;
-    }
-    .blog-desc{
-        margin-top: -90px;
     }
 
     /*footer*/
